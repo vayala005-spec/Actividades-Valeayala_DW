@@ -1,12 +1,69 @@
 <!DOCTYPE html>
-<html lang="es">
-<head>
+<!--Doctype es una sentencia que indica que voy a trabajar con un documento de HTML-->
+
+<html lang="es"> <!--aqui inicia mi pagina con la etiqueta de html-->
+<head> <!--aqui en el head esta todo lo que no es visible en la pagina pero lo hace funcional-->
+  <!--con los metadatos puedo colocar carateres especiales, dar información al SEO para el posicionamiento web-->
+  <meta charset="UTF-8"> <!-- permite caracteres especiales-->
+  <meta name="description" content="Free Web tutorials">
+  <meta name="author" content="John Doe">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <link href="https://fonts.googleapis.com/css2?family=Redaction+10:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+
+
 <title>Musical Vale</title>
 </head>
 <body>
 
-<h1>Musical Vale</h1>
-<p>Escucha mi top 3</p>
+<div class="container-musical">
+    <img src="love.jpg" alt="Imagen de musical app" class="imagen-portada">
+
+    <h1>Musical Vale</h1>
+    <p class="pmusical"> Escucha mi top 3 para dedicar</p>
+
+      <div class="lista-canciones">
+        <!--CANCION 1-->
+      <div class="canción 1">
+        <p>💘 Orbiter</p>
+          <audio controls class="audio-player">
+                    <!-- Mp3 de prueba 1 -->
+                    <source src="Orbiter.mp3" type="audio/mpeg">
+                </audio>
+
+
+      </div>
+
+       <div class="lista-canciones">
+        <!--CANCION 2-->
+      <div class="canción 2">
+        <p>❤️‍🔥 Sparks</p>
+          <audio controls class="audio-player">
+                    <!-- Mp3 de prueba 1 -->
+                    <source src="Coldplay - Sparks [Letra En Español].mp3" type="audio/mpeg">
+                </audio>
+
+
+      </div>
+
+       <div class="lista-canciones">
+        <!--CANCION 3-->
+      <div class="canción 3">
+        <p>❤️‍🩹 Honeybee</p>
+          <audio controls class="audio-player">
+                    <!-- Mp3 de prueba 1 -->
+                    <source src="Olivia Rodrigo - honeybee (Lyric Video).mp3" type="audio/mpeg">
+                </audio>
+
+
+      </div>
+
+
+
+    </div>
+
+  </div>
 
 </body>
 </html>
